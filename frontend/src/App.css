@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+/* Background */
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #0f2027, #2c5364, #00c9ff, #92fe9d);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% }
+  50% { background-position: 100% }
+  100% { background-position: 0% }
+}
+
+/* Glass card */
+.glass-card {
+  backdrop-filter: blur(20px);
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 20px;
+  width: 350px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* Dropzone */
+.dropzone {
+  border: 2px dashed rgba(255,255,255,0.5);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dropzone:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* Image */
+.preview {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+/* Button */
+button {
+  margin-top: 15px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #00f260, #0575e6);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Result */
+.result {
+  margin-top: 20px;
+}
+
+/* Progress */
+.progress {
+  height: 10px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #00ffcc;
+  border-radius: 10px;
+}
+
+/* Floating blobs */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.6;
+}
+
+.blob1 {
+  width: 300px;
+  height: 300px;
+  background: #ff00cc;
+  top: 10%;
+  left: 10%;
+}
+
+.blob2 {
+  width: 250px;
+  height: 250px;
+  background: #00ffee;
+  bottom: 10%;
+  right: 10%;
+}
